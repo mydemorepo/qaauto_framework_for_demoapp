@@ -1,6 +1,7 @@
 import pytest
 from modules.api.clients.my_client import MyClient
 from modules.common import sqllitedb
+from modules.common import mysqldb
 
 @pytest.fixture
 def client():

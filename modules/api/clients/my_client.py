@@ -4,16 +4,16 @@ import requests
 class MyClient():   
     def __init__(self, server_url):
         self.server_url = server_url
-        cureent_response = None  
-     
+        self.cureent_response = None
+    
     def post_content(self, route, request_data):
-        cureent_response = requests.post(self.server_url + route, 
+        self.cureent_response = requests.post(self.server_url + route, 
                                          data = request_data)
-        return cureent_response.json()
+        return self.cureent_response.json()
    
     def get_content(self, route):
-        cureent_response = requests.get(self.server_url + route)
-        return cureent_response.json()
+        self.cureent_response = requests.get(self.server_url + route)
+        return self.cureent_response.json()
     
-    def get_cookie(self):
-        return cureent_response.cookies    
+    def get_cookies(self):
+        return self.cureent_response.cookies    
