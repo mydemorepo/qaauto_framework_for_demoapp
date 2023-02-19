@@ -1,0 +1,45 @@
+ - Даний проєкт виконує тестування проєкту який знаходиться за 
+   посиланням - https://github.com/mydemorepo/demo_python_app
+   Перед запуском тестів потрібно запустити даний проєкт.
+ - Запуск тестів - pytest
+ 
+ Структура проєкту:
+ .
+├── config
+│   └── config.py
+├── conftest.py
+├── modules
+│   ├── api
+│   │   └── clients
+│   │       ├── __init__.py
+│   │       ├── my_client.py
+│   │       └── __pycache__
+│   │           ├── __init__.cpython-36.pyc
+│   │           └── my_client.cpython-36.pyc
+│   ├── common
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-36.pyc
+│   │   │   └── sqllitedb.cpython-36.pyc
+│   │   └── sqllitedb.py
+│   └── ui
+│       └── page_objects
+│           └── __init__.py
+├── offices.csv
+├── __pycache__
+│   └── conftest.cpython-36-pytest-7.0.1.pyc
+├── pytest.ini
+├── sampledatabase.sql
+├── sampledatabase.sqlite
+└── tests
+    ├── api
+    │   ├── __pycache__
+    │   │   ├── test_api.cpython-36.pyc
+    │   │   ├── test_api.cpython-36-pytest-7.0.1.pyc
+    │   │   └── tests_api.cpython-36.pyc
+    │   └── test_api.py
+    └── ui
+        ├── __pycache__
+        │   └── test_fixtures.cpython-36-pytest-7.0.1.pyc
+        └── test_fixtures.py
+ 

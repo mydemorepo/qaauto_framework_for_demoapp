@@ -5,7 +5,7 @@ from modules.common import sqllitedb
 
 @pytest.fixture
 def client():
-    client = MyClient('http://192.168.0.72:5000')
+    client = MyClient('http://192.168.0.35:5000')
     yield client
     
 
