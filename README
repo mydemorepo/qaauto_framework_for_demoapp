@@ -1,6 +1,9 @@
  - Даний проєкт виконує тестування проєкту який знаходиться за 
-   посиланням - https://github.com/mydemorepo/demo_python_app
+   посиланням - https://github.com/mydemorepo/demo_python_app (дивись README)
    Перед запуском тестів потрібно запустити даний проєкт.
+ - Перед запуском тестів потрібно в файлі conftest.py в рядку
+   client = MyClient('http://192.168.0.35:5000') підставити ІР адресу машини
+   на якій запущено проєкт який тестуємо: https://github.com/mydemorepo/demo_python_app
  - Запуск тестів - pytest
  
  Структура проєкту:
